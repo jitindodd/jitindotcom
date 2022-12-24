@@ -93,6 +93,11 @@
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+.me .name {
+  width: 200px;
+  margin-bottom: 8px;
+}
+
 .me ul {
   list-style-type: none;
 }
@@ -104,6 +109,10 @@
 
 .me a:hover {
   text-decoration: underline;
+}
+
+.me .emoji {
+  margin-top: 12px;
 }
 
 .center::before {

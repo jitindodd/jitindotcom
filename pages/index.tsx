@@ -1,13 +1,25 @@
 import Head from "next/head";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import ReactTextTransition, { presets } from "react-text-transition";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Thanks https://wongmjane.com/ for the inspo
-// https://jacob.energy/ also for inspo
+const names = ["Jitin Dodd", "Jitin ਡੋਡ", "ਜਿਤਿਨ Dodd", "ਜਿਤਿਨ ਡੋਡ"];
+
 export default function Home() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => (index + 1) % names.length),
+      5000 // every 5 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
     <>
       <Head>
@@ -63,7 +75,12 @@ export default function Home() {
         </div> */}
 
         <div className={styles.me}>
-          <h2>Hey! I'm Jitin Dodd 🦕</h2>
+          <div className={styles.name}>
+            <h2>
+              Hey! I'm{" "}
+              <ReactTextTransition inline>{names[index]}</ReactTextTransition>
+            </h2>
+          </div>
           {/* ਜਿਤਿਨ ਡੋਡ */}
 
           <h3>You can find me on:</h3>
@@ -148,6 +165,8 @@ export default function Home() {
                 ENS: <span className={styles.handle}>jitin.eth</span>
               </a>
             </li>
+
+            <li className={styles.emoji}>🦕</li>
           </ul>
         </div>
 
