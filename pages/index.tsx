@@ -117,21 +117,21 @@ export default function Home() {
 
             <li>
               <a
-                href="https://www.goodreads.com/user/show/59516132-jitin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Goodreads: <span className={styles.handle}>@jitin</span>
-              </a>
-            </li>
-
-            <li>
-              <a
                 href="https://www.linkedin.com/in/jitindodd"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 LinkedIn: <span className={styles.handle}>@jitindodd</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.goodreads.com/user/show/59516132-jitin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Goodreads: <span className={styles.handle}>@jitin</span>
               </a>
             </li>
 
@@ -146,11 +146,7 @@ export default function Home() {
             </li>
 
             <li>
-              <a
-                href="mailto:jitindodd@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="mailto:jitindodd@gmail.com">
                 Email:{" "}
                 <span className={styles.handle}>jitindodd@gmail.com</span>
               </a>
