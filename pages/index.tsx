@@ -118,7 +118,10 @@ export default function Home() {
               </a>
             </li>
 
-            <li className={styles.emoji}>☀️</li>
+            <li className={styles.emoji}>
+              <h3>🌑 ☀️</h3>
+              {/* <h3>🌗 </h3> */}
+            </li>
           </ul>
         </div>
       </main>
