@@ -32,7 +32,7 @@ export default function Home() {
         <div className={styles.me}>
           <div className={styles.name}>
             <h2>
-              hey, I'm{" "}
+              {"hey, I'm "}
               <ReactTextTransition className={styles.handle} inline>
                 {names[index]}
               </ReactTextTransition>
