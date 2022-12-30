@@ -26,7 +26,7 @@ export default function Home() {
         <title>jitin</title>
         <meta name="description" content="Jitin Dodd's personal website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/tree.png" />
+        <link rel="icon" href="/trex.png" />
       </Head>
       <main className={styles.main}>
         <div className={styles.me}>
