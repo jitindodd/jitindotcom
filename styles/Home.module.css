@@ -103,7 +103,13 @@
 }
 
 .me .handle {
-  color: #ecca0d;
+  color: #339253;
+}
+
+@media (prefers-color-scheme: dark) {
+  .me .handle {
+    color: #50c878;
+  }
 }
 
 .me a:hover {
